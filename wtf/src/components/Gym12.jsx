@@ -1,7 +1,8 @@
 import { Input, Text } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import "./Gym.css";
+import "../styles/Gym.css";
+
 
 const Gymtwo = () => {
   const [data, setData] = useState([]);

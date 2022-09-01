@@ -1,9 +1,9 @@
 import { Input } from "@chakra-ui/react";
 import React from "react";
 
-import "./Gym.css";
-import Gymthree from "./Gymthree";
-import Gymtwo from "./Gymtwo";
+import "../styles/Gym.css";
+import Gymthree from "./Gym1";
+import Gymtwo from "./Gym12";
 
 
 import mainimage from "./mainimage.png";
