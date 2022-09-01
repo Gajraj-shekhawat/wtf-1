@@ -1,9 +1,7 @@
-import React from "react";
-import "./Gym.css";
-import { Button, Input, Select, Text } from "@chakra-ui/react";
-import { useState } from "react";
+import { Input, Text } from "@chakra-ui/react";
 import axios from "axios";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import "./Gym.css";
 
 const Gymtwo = () => {
   const [data, setData] = useState([]);
@@ -62,7 +60,7 @@ const handlesort = (e) =>{
         {data.map((el,i) => (
           <div id="Box2" key ={i}>
             <div id="image_div">
-                {el.cover_image?<img src={el.cover_image} alt="" />:<img src="https://www.bing.com/th?id=OIP.cl6p7nZBiruTcSJZE5ZdQgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"/>}
+                {el.cover_image?<img src={el.cover_image} alt="" />:<img alt="" src="https://www.bing.com/th?id=OIP.cl6p7nZBiruTcSJZE5ZdQgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"/>}
             </div>
             <div id="details_div">
                <Text id="p">{el.gym_name}</Text>
